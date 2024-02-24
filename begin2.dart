@@ -1,4 +1,7 @@
-String name;
+String? name;
 void main() {
-  print(name);
+  name = 'John';
+  print(name ?? 0);
+  name = null;
+  print(name ?? 0);
 }
